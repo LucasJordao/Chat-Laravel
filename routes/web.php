@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\chat\ChatController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,13 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+Route::get("chat", [ChatController::class, "index"])->middleware('auth')->name('chat');
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

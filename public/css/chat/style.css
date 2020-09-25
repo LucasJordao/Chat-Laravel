@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    width:100%;
+    height:100vh;
+    background:#101115;
+}
+
+.left-panel{
+    width:30%;
+    height:100vh;
+    background:#1D1F24;
+}
+
+.right-panel{
+    width:70%;
+    height:100vh;
+}
+
+
+/* Medias Queries */
+
+@media only screen and (max-width: 1300px){
+   .right-panel{
+       width:65%;
+   }
+   .left-panel{
+       width:35%;
+   }
+}
+
+@media only screen and (max-width: 790px){
+    .right-panel{
+        width:52%;
+    }
+    .left-panel{
+        width:38%;
+    }
+ }
+
+@media only screen and (max-width: 780px){
+    .right-panel{
+        width:52%;
+    }
+    .left-panel{
+        width:48%;
+    }
+ }
