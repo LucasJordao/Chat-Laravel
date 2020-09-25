@@ -1,6 +1,7 @@
 *{
     margin:0;
     padding:0;
+    outline:none;
 }
 
 body{
@@ -12,15 +13,104 @@ body{
 .left-panel{
     width:30%;
     height:100vh;
+    float:left;
     background:#1D1F24;
 }
 
 .right-panel{
     width:70%;
     height:100vh;
+    float:right;
 }
 
+.top-menu{
+    width:100%;
+    height:50px;
+    background:#3D3E3E;
+    color:#C1C3C3; 
+    float:left;
+}
 
+.icons-menu{
+    width:50%;
+    height:100%;
+    float:right;
+    text-align: right;
+    line-height: 50px;
+    font-size:18px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
+    padding:0 20px;
+}
+
+.icons-menu i{
+    cursor:pointer;
+    padding-top:4px;
+    width:30px;
+    height:30px;
+    border-radius:100%;
+    text-align:center;
+}
+
+.icons-menu i:hover{
+    color:white;
+}
+
+.area-image-menu{
+    width:45px;
+    height:100%;
+    float:left;
+}
+
+.image-menu{
+    cursor:pointer;
+    width:37px;
+    height:37px;
+    margin:7px 20px;
+    border-radius:100%;
+    background:white;
+}
+
+.search-area-menu{
+    float:left;
+    width:100%;
+    padding:0;
+    height:45px;
+    border-bottom:1px solid gray;
+}
+
+.search-area-menu label{
+    width:100%;
+    float:left;
+    padding: 7px 20px;
+}
+
+.search-button{
+    width:20%;
+    height:30px;
+    color:#C1C3C3;
+    float:left;
+    background:#515151;
+    border-radius: 20px 0 0 20px;
+    text-align: center;
+    line-height: 30px;
+    cursor:pointer;
+}
+
+.input-search-menu{
+    width:80%;
+    height:30px;
+    background:#515151;
+    border:none;
+    border-radius: 0 20px 20px 0;
+    float:right;
+    caret-color:white;
+    color:white;
+}
 /* Medias Queries */
 
 @media only screen and (max-width: 1300px){

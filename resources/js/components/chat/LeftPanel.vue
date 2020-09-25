@@ -1,6 +1,6 @@
 <template>
     <div class="left-panel">
-
+        <slot></slot>
     </div>
 </template>
 
