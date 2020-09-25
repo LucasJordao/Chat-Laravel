@@ -14,6 +14,7 @@
     <div id="app">
         <left-panel>
             <top-menu></top-menu>
+            <contact-message></contact-message>
         </left-panel>
         <right-panel></right-panel>
     </div>
