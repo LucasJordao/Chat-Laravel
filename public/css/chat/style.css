@@ -12,9 +12,13 @@ body{
 
 .left-panel{
     width:30%;
-    height:100vh;
+    height:calc(100vh - 50px);
     float:left;
     background:#1D1F24;
+    border-right:1px solid gray;
+    overflow: auto;
+    position:fixed;
+    top:50px;
 }
 
 .right-panel{
@@ -24,11 +28,13 @@ body{
 }
 
 .top-menu{
-    width:100%;
+    width:30%;
     height:50px;
     background:#3D3E3E;
-    color:#C1C3C3; 
+    color:#596868; 
+    position:fixed;
     float:left;
+    border-right:1px solid gray;
 }
 
 .icons-menu{
@@ -45,6 +51,15 @@ body{
     -ms-user-select: none; 
     user-select: none; 
     padding:0 20px;
+}
+
+.noselect{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none; 
+    -khtml-user-select: none; 
+    -moz-user-select: none; 
+    -ms-user-select: none; 
+    user-select: none; 
 }
 
 .icons-menu i{
@@ -131,6 +146,34 @@ body{
     height:100%;
     border-bottom:1px solid gray;
 }
+
+.informations-message-area{
+    height:100%;
+    width: calc(100% - 80px);
+    float:right;
+    padding:13px 15px;
+}
+
+.informations-top{
+    width:100%;
+    height:20px;
+    float:left;
+    color:#FFFFFF;
+}
+
+.informations-top .name{
+    float:left;
+    font-size:16px;
+    font-weight:590;
+    width:calc(100% - 20px);
+}
+
+.informations-top .hour {
+    float:right;
+    font-size:12px;
+    width:20px;
+}
+
 .input-search-menu{
     width:80%;
     height:30px;
@@ -140,6 +183,118 @@ body{
     float:right;
     caret-color:white;
     color:white;
+}
+
+.content-informations .content{
+    width:calc(80% - 20px);
+    height:20px;
+    float:left;
+    color:#FFFFFF;
+    margin-top:3px;
+}
+
+.chat-area{
+    width:100%;
+    height:calc(100% - 110px);
+    background:url('../../chat/img/background.jpg');
+    background-size:contain;
+    opacity: 0.1;
+    position:fixed;
+    top:50px;
+}
+
+.top-chat{
+    width:100%;
+    height:50px;
+    background:#3D3E3E;
+    position:fixed;
+}
+
+.down-chat{
+    width:100%;
+    height: 60px;
+    background:#3D3E3E;
+    position:fixed;
+    float:left;
+    bottom:0px;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(72, 93, 100); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+
+}
+
+.area-image-top-chat{
+    width:50%;
+    height:100%;
+    padding:5px 20px;
+    float:left;
+}
+
+.img-chat{
+    width:40px;
+    height:40px;
+    background:gray;
+    float:left;
+    border-radius:100%;
+}
+
+.area-image-top-chat span{
+    color:#FFFFFF;
+    float:left;
+    line-height: 40px;
+    font-weight:580;
+    margin-left:10px;
+}
+
+.down-chat input{
+    width:60%;
+    height:40px;
+    border-radius:20px;
+    margin-top:10px;
+    float:left;
+    margin-left:40px;
+    padding:5px 20px;
+    color:white;
+    background:#515151;
+    border:none;
+}
+
+.cont-messages{
+    min-width:20px;
+    height:20px;
+    border-radius:100%;
+    background:rgb(25, 150, 118);
+    float:right;
+    text-align:center;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.down-chat button{
+    width:30px;
+    height:30px;
+    background:none;
+    border:none;
+    color:white;
+    outline:none;
+    font-size:20px;
+    height:100%;
+    margin-left:20px;
 }
 /* Medias Queries */
 
@@ -159,6 +314,9 @@ body{
     .left-panel{
         width:38%;
     }
+    .top-menu{
+        width:38%;
+    }
  }
 
 @media only screen and (max-width: 780px){
@@ -166,6 +324,10 @@ body{
         width:52%;
     }
     .left-panel{
+        width:48%;
+    }
+
+    .top-menu{
         width:48%;
     }
  }

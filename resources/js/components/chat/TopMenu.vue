@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <div class="top-menu">
+    <div class="top-menu">
+        <div >
             <div class="area-image-menu">
                 <div class="image-menu"></div>
             </div>

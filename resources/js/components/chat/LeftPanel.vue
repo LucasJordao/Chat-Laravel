@@ -1,6 +1,6 @@
 <template>
     <div class="left-panel">
-        <slot></slot>
+        <slot name="menu"></slot>
         <slot name="contact-messages"></slot>
     </div>
 </template>

@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get("chat", [ChatController::class, "index"])->middleware('auth')->name('chat');
+Route::get("/mychat", [ChatController::class, "index"])->middleware('auth')->name('chat');
 
 Route::get('/', function () {
     return view('welcome');

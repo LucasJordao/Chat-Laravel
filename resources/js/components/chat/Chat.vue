@@ -1,6 +1,5 @@
 <template>
-    <div class="right-panel">
-        <slot></slot>
+    <div class="chat-area">
     </div>
 </template>
 

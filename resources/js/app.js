@@ -24,6 +24,9 @@ Vue.component('left-panel', require('./components/chat/LeftPanel.vue').default);
 Vue.component('right-panel', require('./components/chat/RightPanel.vue').default);
 Vue.component('top-menu', require('./components/chat/TopMenu.vue').default);
 Vue.component('contact-message', require('./components/chat/ContactMessage.vue').default);
+Vue.component('chat-area', require('./components/chat/Chat.vue').default);
+Vue.component('top-chat', require('./components/chat/TopChat.vue').default);
+Vue.component('down-chat', require('./components/chat/DownChat.vue').default);
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application

@@ -12,11 +12,26 @@
 </head>
 <body>
     <div id="app">
+        <top-menu></top-menu>
         <left-panel>
-            <top-menu></top-menu>
-            <contact-message></contact-message>
+            
+            <div slot="contact-messages">
+                <contact-message></contact-message>
+                <contact-message></contact-message>
+                <contact-message></contact-message>
+                <contact-message></contact-message>
+                <contact-message></contact-message>
+                <contact-message></contact-message>
+                <contact-message></contact-message>
+                <contact-message></contact-message>
+                <contact-message></contact-message>
+            </div>
         </left-panel>
-        <right-panel></right-panel>
+        <right-panel>
+            <top-chat></top-chat>
+            <chat-area></chat-area>
+            <down-chat></down-chat>
+        </right-panel>
     </div>
 </body>
 </html>
